@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174a35">
+  <meta name="description" content="Free forestry learning notes, practice quizzes, and tree identification resources.">
+  <title>VANAM ACADEMY | Forestry Learning</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="assets/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Vanam Academy home">
+      <span class="brand-mark" aria-hidden="true">🌳</span>
+      <span><strong>VANAM ACADEMY</strong><small>Growing knowledge. Protecting forests.</small></span>
+    </a>
+    <button id="installBtn" class="button button-light hidden" type="button">Install app</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">FORESTRY • SCIENCE • CAREERS</p>
+      <h1>Learn forestry.<br><span>Grow your future.</span></h1>
+      <p class="hero-copy">Free, student-friendly forestry notes and practice resources — built for learners at every stage.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#library">Explore notes <span aria-hidden="true">→</span></a>
+        <a class="button button-outline" href="#quiz">Try a quick quiz</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>01</strong><span>Learn by topic</span></div>
+        <div><strong>02</strong><span>Practise questions</span></div>
+        <div><strong>03</strong><span>Explore tree facts</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="library">
+      <div class="section-heading">
+        <div><p class="eyebrow">YOUR STUDY LIBRARY</p><h2>Forestry notes</h2></div>
+        <span class="pill">Starter collection</span>
+      </div>
+      <label class="searchbox"><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search subjects, topics or keywords…" autocomplete="off"><button id="clearSearch" type="button" aria-label="Clear search">×</button></label>
+      <div class="filter-row" id="filters" aria-label="Filter notes by subject"></div>
+      <div class="notes-grid" id="notesGrid"></div>
+      <p class="small-note">These are introductory starter notes. Verify detailed academic content against standard textbooks, course materials and official exam syllabi before relying on it for exams.</p>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="section-heading">
+        <div><p class="eyebrow">CHECK YOUR KNOWLEDGE</p><h2>Forestry quick quiz</h2></div>
+        <span class="pill">5 questions</span>
+      </div>
+      <div class="quiz-card">
+        <div class="quiz-progress"><span id="quizProgress">Question 1 of 5</span><span id="quizScore"></span></div>
+        <div class="progress-track"><div id="progressBar"></div></div>
+        <h3 id="questionText">Loading question…</h3>
+        <div id="answerOptions" class="answer-options"></div>
+        <p id="answerFeedback" class="feedback" aria-live="polite"></p>
+        <div class="quiz-actions"><button id="nextQuestion" class="button button-primary" type="button" disabled>Next question →</button><button id="restartQuiz" class="button button-outline" type="button">Restart</button></div>
+      </div>
+    </section>
+
+    <section class="section" id="tree-library">
+      <div class="section-heading">
+        <div><p class="eyebrow">FIELD REFERENCE</p><h2>Tree library</h2></div>
+        <span class="pill">Sample species</span>
+      </div>
+      <div id="speciesGrid" class="species-grid"></div>
+    </section>
+
+    <section class="callout">
+      <div class="callout-icon" aria-hidden="true">🌱</div>
+      <div><p class="eyebrow">BUILT FOR LEARNERS</p><h2>Knowledge should be accessible.</h2><p>Vanam Academy will grow with verified notes, useful diagrams, practice questions and resources contributed by forestry learners and educators.</p></div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="footer-brand" href="#">🌳 VANAM ACADEMY</a>
+    <p>Growing knowledge. Protecting forests.</p>
+    <p class="disclaimer">Educational starter project. Content is for learning support and is not an official university or examination authority resource.</p>
+    <p>© <span id="year"></span> Vanam Academy</p>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
