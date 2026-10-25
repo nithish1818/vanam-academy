@@ -66,3 +66,11 @@ NEXT FEATURES TO ADD AFTER THIS WORKS
 
 CONTENT QUALITY
 Use your own writing, public-domain/openly licensed materials, or content you have permission to publish. Credit sources, keep references with each topic, and independently verify formulas, units and exam facts.
+
+BRAND UPDATE
+------------
+This branded package replaces the placeholder app icons with the VANAM ACADEMY tree-and-book logo. Upload/commit the updated files to your existing GitHub repository to publish the logo changes.
+
+PHOTO UPDATE
+------------
+The site header/footer use the exact photo supplied by the site owner, stored as assets/vanam-tree-photo.jpg. The PWA/browser icons use a square crop of that same photo because app icons require a square canvas. The original portrait photo is preserved in the assets folder.
